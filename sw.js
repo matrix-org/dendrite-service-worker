@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-self.importScripts("wasm_exec.js", "bundles/go-http-bridge.js", "bundles/sqlite-bridge.js")
+self.importScripts("wasm_exec.js", "bundles/go_http_bridge.js", "bundles/sqlite_bridge.js")
 
 self.addEventListener('install', function(event) {
     console.log("installing SW")
@@ -23,7 +23,7 @@ self.addEventListener('activate', function(event) {
     console.log("SW activated")
 
     event.waitUntil(
-        GoSqliteJs.init().then(()=>{
+        sqlite_bridge.init().then(()=>{
             const go = new Go()
             WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
                 go.run(result.instance)
