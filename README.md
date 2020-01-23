@@ -13,3 +13,10 @@ storage (thus delegating SQL to sql.js, running in-browser), and the
 [go-http-js-libp2p](https://github.com/matrix-org/go-http-js-libp2p) transport
 for HTTP (thus tunnelling HTTP over libp2p via js-libp2p, running
 in-browser).
+
+In order to bootstrap, we start off with a mock dendrite in main.go, which is built via:
+
+`GOOS=js GOARCH=wasm go build -o main.wasm`
+
+It's unclear at this stage whether the library should provide the service worker
+script (sw.js) or if the calling application should.

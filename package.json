@@ -1,0 +1,20 @@
+{
+  "name": "dendrite-service-worker",
+  "version": "0.1.0",
+  "description": "Embeds a dendrite in a web service-worker",
+  "main": "js/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "go-sqlite-js": "^0.1.0",
+    "go-http-js-libp2p": "^0.1.0"
+  }
+}
