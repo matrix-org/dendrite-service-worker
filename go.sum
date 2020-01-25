@@ -1,0 +1,4 @@
+github.com/matrix-org/go-http-js-libp2p v0.0.0-20200125063821-6eb06b102bda h1:e8QGrSxjAaQ2W5ak33taR2yhQAVBQzjrKJ2zW9/jOIw=
+github.com/matrix-org/go-http-js-libp2p v0.0.0-20200125063821-6eb06b102bda/go.mod h1:3WluEZ9QXSwU30tWYqktnpC1x9mwZKx1r8uAv8Iq+a4=
+github.com/matrix-org/go-sqlite3-js v0.0.0-20200123202756-b6282ecb0dd6 h1:QkyrOsMKKDRu6qgzuf//E3Capm+PpG68EDsNDg0yPCg=
+github.com/matrix-org/go-sqlite3-js v0.0.0-20200123202756-b6282ecb0dd6/go.mod h1:e+cg2q7C7yE5QnAXgzo512tgFh1RbQLC0+jozuegKgo=
