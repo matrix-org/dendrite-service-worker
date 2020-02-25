@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        'sqlite_bridge': './node_modules/go-sqlite3-js/bridge.js',
-        'go_http_bridge': './node_modules/go-http-js-libp2p/bridge.js',
+        'sqlite_bridge': './node_modules/go-sqlite-js/js/bridge.js',
+        // 'go_http_bridge': './node_modules/go-http-js-libp2p/bridge.js',
         'sql_wasm': './node_modules/sql.js/dist/sql-wasm.wasm',
     },
     devtool: 'inline-source-map',

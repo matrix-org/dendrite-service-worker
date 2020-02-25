@@ -20,3 +20,20 @@ In order to bootstrap, we start off with a mock dendrite in main.go, which is bu
 
 It's unclear at this stage whether the library should provide the service worker
 script (sw.js) or if the calling application should.
+
+
+To build dendrite, go to the dendrite repo and: (may need to be on `kegan/wasm`):
+```
+$ GOOS=js GOARCH=wasm go build -o main.wasm ./cmd/dendritejs
+$ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
+```
+
+If you update go-sqlite-js you need to:
+```
+$ yarn add "https://github.com/matrix-org/go-sqlite3-js#master"
+```
+
+And to pull in the latest Go code in dendrite:
+```
+$ go get github.com/matrix-org/go-sqlite3-js@master
+```

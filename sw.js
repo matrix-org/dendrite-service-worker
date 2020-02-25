@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-self.importScripts("wasm_exec.js", "bundles/go_http_bridge.js", "bundles/sqlite_bridge.js")
+self.importScripts("wasm_exec.js", "bundles/sqlite_bridge.js")
 
 self.addEventListener('install', function(event) {
     console.log("installing SW")
